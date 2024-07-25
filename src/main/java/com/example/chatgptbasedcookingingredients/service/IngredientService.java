@@ -24,7 +24,7 @@ public class IngredientService {
 
     public String categorizeIngredient(String ingredient) {
         String prompt = "Is " + ingredient + " vegan, vegetarian or regular? Answer in one sentence.";
-        OpenAiRequest request = new OpenAiRequest("gpt-4o-mini", List.of(new OpenAiMessage("user", prompt)), 0.2);
+        OpenAiRequest request = new OpenAiRequest(prompt, false);
 
         OpenAiResponse response = restClient.post()
                 .contentType(MediaType.APPLICATION_JSON)
