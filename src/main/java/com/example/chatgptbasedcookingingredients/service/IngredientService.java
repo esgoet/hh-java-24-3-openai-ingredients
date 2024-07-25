@@ -1,14 +1,11 @@
 package com.example.chatgptbasedcookingingredients.service;
 
-import com.example.chatgptbasedcookingingredients.model.OpenAiMessage;
 import com.example.chatgptbasedcookingingredients.model.OpenAiRequest;
 import com.example.chatgptbasedcookingingredients.model.OpenAiResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
-
-import java.util.List;
 
 @Service
 public class IngredientService {
